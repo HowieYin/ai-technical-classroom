@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Technical Classroom"
+  short_description: "Run evidence-gated technical courses and offline HTML reports"
+  default_prompt: "Use $ai-technical-classroom to turn this paper or topic into a rigorous technical course and offline HTML report."
