@@ -111,7 +111,9 @@ def required_evidence(course_dir: Path, evidence: str) -> Path:
 
 
 def command_init(args: argparse.Namespace) -> None:
-    args.course_dir.mkdir(parents=True, exist_ok=False)
+    args.course_dir.mkdir(parents=True, exist_ok=True)
+    if state_path(args.course_dir).exists():
+        raise ValueError(f"timer already initialized: {state_path(args.course_dir)}")
     state = State()
     save(args.course_dir, state)
     log(args.course_dir, "initialized", standard="30m+30m+2h+1h")
