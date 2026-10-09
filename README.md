@@ -1,5 +1,8 @@
 # AI Technical Classroom
 
+[![Language: English](https://img.shields.io/badge/Language-English-1f6feb)](README.md)
+[![语言：简体中文](https://img.shields.io/badge/%E8%AF%AD%E8%A8%80-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-dc4a22)](README.zh-CN.md)
+
 > A portable **Agent Skill** for turning a technical topic, research paper, codebase, URL, local artifact, or engineering question into an evidence-grounded learning archive and a publication-quality, offline HTML technical report.
 
 `ai-technical-classroom` is not a chatbot, a hosted service, or an LLM SDK. It is a **`SKILL.md`-based workflow package**: install it into a capable coding agent (Claude Code, Codex, TraeX, or another agent runtime that loads Agent Skills), then ask that agent to run a technical course. The agent supplies the model, tool use, file access, browser/research ability, and—in strict timed mode—a durable runner.
