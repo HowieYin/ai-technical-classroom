@@ -81,6 +81,16 @@ The Skill remains useful with a local model, a direct provider API, an OpenAI-co
 
 ## Installation
 
+### Updating an Existing Installation
+
+If you installed the Skill with `git clone`, update it from its installed directory:
+
+```sh
+git -C /path/to/skills/ai-technical-classroom pull --ff-only
+```
+
+Replace the path with your actual installation directory. Start a fresh agent session afterward so it loads the updated instructions. If Git reports local changes or divergent history, resolve them before updating; do not discard customizations with a forced reset.
+
 Clone once, then install the repository root—the directory containing `SKILL.md`—into your agent's Skill search path.
 
 ```sh

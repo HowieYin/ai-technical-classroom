@@ -83,6 +83,16 @@ ai-technical-classroom → 调研、课程、审稿与交付工作流
 
 ## 安装
 
+### 更新已安装的 Skill
+
+如果通过 `git clone` 安装，可在实际安装目录执行更新：
+
+```sh
+git -C /path/to/skills/ai-technical-classroom pull --ff-only
+```
+
+将路径替换为你的实际安装目录。更新后新开一个 Agent 会话，使其加载最新指令。如果 Git 提示本地修改或历史分叉，请先处理这些差异；不要用强制 reset 丢弃自己的定制。
+
 克隆本仓库，然后将**含 `SKILL.md` 的仓库根目录**放进 Agent 的 Skill 搜索路径。
 
 ```sh
